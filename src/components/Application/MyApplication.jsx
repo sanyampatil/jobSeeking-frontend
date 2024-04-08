@@ -1,9 +1,7 @@
 import React from 'react'
 
 const MyApplication = () => {
-  return (
-    <div>MyApplication</div>
-  )
+  return <div>MyApplication</div>
 }
 
 export default MyApplication
