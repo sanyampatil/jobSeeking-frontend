@@ -4,7 +4,6 @@ import { Link, useNavigate } from 'react-router-dom'
 import axios from 'axios'
 import toast from 'react-hot-toast'
 import { GiHamburgerMenu } from 'react-icons/gi'
-import UnNavbar from './UnNavbar'
 
 const Navbar = () => {
   const [show, setShow] = useState(false)
