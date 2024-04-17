@@ -4,6 +4,9 @@ import { Link, useNavigate } from 'react-router-dom'
 import axios from 'axios'
 import toast from 'react-hot-toast'
 import { GiHamburgerMenu } from 'react-icons/gi'
+import Avatar from '@mui/material/Avatar'
+import Stack from '@mui/material/Stack'
+import { deepOrange, deepPurple } from '@mui/material/colors'
 
 const Navbar = () => {
   const [show, setShow] = useState(false)
@@ -70,7 +73,10 @@ const Navbar = () => {
               )}
             </div>
           )}
-          {isAuthorized && <button onClick={handleLogout}>LOGOUT</button>}
+          {isAuthorized && <button onClick={handleLogout}>LOGOUT</button>};
+          <Stack direction='row' spacing={2}>
+            <Avatar sx={{ bgcolor: deepOrange[500] }}>N</Avatar>
+          </Stack>
           {!isAuthorized && (
             <div>
               <Link to='/login'>
